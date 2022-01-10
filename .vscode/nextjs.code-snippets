@@ -3,17 +3,17 @@
     "scope": "javascript, react",
     "prefix": "njs-site",
     "body": [
-      "import Head from 'next/head'",
+      "import ${1:Head} from '${2:next/head}'",
       "",
-      "const ${1:${SITENAME}} = () => {",
+      "const ${3:Home} = () => {",
       "  return (",
       "    <div>",
-      "      ${2:${SITECONTENT}}",
+      "      ${4}",
       "    </div>",
       "  )",
       "}",
       "",
-      "export default ${1:${SITENAME}}"
+      "export default ${3:Home}"
     ],
     "description": "Create a Next Page"
   },
@@ -24,5 +24,13 @@
       "import ${1} from '${2}'"
     ],
     "description": "Importing component or style"
+  },
+  "nextjsATag": {
+    "scope": "javascript, nextjs",
+    "prefix": "njs-atc",
+    "body": [
+      "<a className={${1:articleStyles.card}}></a>"
+    ],
+    "description": "A tag using the className property"
   }
 }
