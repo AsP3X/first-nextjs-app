@@ -1,0 +1,28 @@
+{
+  "nextjsCreatePageBoilerplate": {
+    "scope": "javascript, react",
+    "prefix": "njs-site",
+    "body": [
+      "import Head from 'next/head'",
+      "",
+      "const ${1:${SITENAME}} = () => {",
+      "  return (",
+      "    <div>",
+      "      ${2:${SITECONTENT}}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default ${1:${SITENAME}}"
+    ],
+    "description": "Create a Next Page"
+  },
+  "nextjsImportComponent": {
+    "scope": "javascript, nextjs",
+    "prefix": "njs-import",
+    "body": [
+      "import ${1} from '${2}'"
+    ],
+    "description": "Importing component or style"
+  }
+}
