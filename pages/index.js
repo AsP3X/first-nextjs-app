@@ -18,7 +18,7 @@ export default function Home({ users }) {
 }
 
 export const getStaticProps = async (context) => {
-  const res = await fetch(`http://localhost:3030/users`)
+  const res = await fetch(`http://localhost:3000/users`)
   const users = await res.json()
 
   if (!users) {
