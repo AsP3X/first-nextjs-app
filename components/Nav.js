@@ -12,6 +12,10 @@ const Nav = () => {
           <Link href='/about'>About</Link>
         </li>
       </ul>
+      <div className={ navStyles.userAccount }>
+        <div className={ navStyles.profile }>
+        </div>
+      </div>
     </nav>
   )
 }
