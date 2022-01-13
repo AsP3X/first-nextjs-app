@@ -1,11 +1,18 @@
 import React from 'react'
+import Image from 'next/image'
 
+// CDN Corespace Images
+const CCImage = ({ src, width, quality }) => {
+  // return `http://localhost/images/${src}?w=${width}&q=${quality || 75}`
+  return `http://localhost:3008/images/file/${src}`
+}
 
 const User = ({ user }) => {
   if (user) {
     return (
       <div>
-        <h3>{user.username}</h3>
+        
+        <h3>{user.username}</h3><Image loader={CCImage} src={user.img} alt="User profile picture" width={100} height={100} />
         <p>UserID: {user._id} </p>
         <p>Email: {user.email} </p>
         <p>Created: {user.createdAt} </p>
